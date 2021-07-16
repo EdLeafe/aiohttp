@@ -1,3 +1,8 @@
+3.4.5-forked (2021-07-16)
+==================
+
+- Removed chardet to get rid of the LGPL dependency.
+
 3.4.4 (2018-09-05)
 ==================
 

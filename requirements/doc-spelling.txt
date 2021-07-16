@@ -14,8 +14,6 @@ blockdiag==2.0.1
     # via sphinxcontrib-blockdiag
 certifi==2020.12.5
     # via requests
-chardet==4.0.0
-    # via requests
 click-default-group==1.2.2
     # via towncrier
 click==7.1.2

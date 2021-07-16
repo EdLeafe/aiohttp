@@ -729,9 +729,7 @@ def test_get_encoding_unknown(loop: Any, session: Any) -> None:
     )
 
     response._headers = {"Content-Type": "application/json"}
-    with mock.patch("aiohttp.client_reqrep.chardet") as m_chardet:
-        m_chardet.detect.return_value = {"encoding": None}
-        assert response.get_encoding() == "utf-8"
+    assert response.get_encoding() == "utf-8"
 
 
 def test_raise_for_status_2xx() -> None:

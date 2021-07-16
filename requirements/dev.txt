@@ -34,8 +34,6 @@ brotli==1.0.9
     # via
     #   -r requirements/base.txt
     #   -r requirements/test.txt
-cchardet==2.1.7
-    # via -r requirements/base.txt
 certifi==2020.12.5
     # via requests
 cffi==1.14.4
@@ -46,10 +44,6 @@ cfgv==3.2.0
     # via
     #   -r requirements/lint.txt
     #   pre-commit
-chardet==4.0.0
-    # via
-    #   -r requirements/base.txt
-    #   requests
 cherry_picker==2.0.0 ; python_version >= "3.6"
     # via -r requirements/dev.in
 click==7.1.2

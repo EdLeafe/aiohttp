@@ -116,11 +116,9 @@ botocore
 brotli
 bugfix
 builtin
-cChardet
 cancelled
 canonicalization
 canonicalize
-cchardet
 ceil
 charset
 charsetdetect

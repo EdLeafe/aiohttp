@@ -33,13 +33,6 @@ Library Installation
 
    $ pip install aiohttp
 
-You may want to install *optional* :term:`cchardet` library as faster
-replacement for :term:`chardet`:
-
-.. code-block:: bash
-
-   $ pip install cchardet
-
 For speeding up DNS resolving by client API you may install
 :term:`aiodns` as well.
 This option is highly recommended:
@@ -51,9 +44,8 @@ This option is highly recommended:
 Installing speedups altogether
 ------------------------------
 
-The following will get you ``aiohttp`` along with :term:`chardet`,
-:term:`aiodns` and ``Brotli`` in one bundle. No need to type
-separate commands anymore!
+The following will get you ``aiohttp`` along with :term:`aiodns`
+and ``Brotli`` in one bundle. No need to type separate commands anymore!
 
 .. code-block:: bash
 
@@ -149,17 +141,11 @@ Dependencies
 - Python 3.7+
 - *async_timeout*
 - *attrs*
-- *chardet*
 - *multidict*
 - *yarl*
-- *Optional* :term:`cchardet` as faster replacement for
-  :term:`chardet`.
 
   Install it explicitly via:
 
-  .. code-block:: bash
-
-     $ pip install cchardet
 
 - *Optional* :term:`aiodns` for fast DNS resolving. The
   library is highly recommended.
