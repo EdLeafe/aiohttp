@@ -67,11 +67,6 @@ except ImportError:  # pragma: no cover
     ssl = None  # type: ignore[assignment]
     SSLContext = object  # type: ignore[misc,assignment]
 
-try:
-    import cchardet as chardet
-except ImportError:  # pragma: no cover
-    import chardet  # type: ignore[no-redef]
-
 
 __all__ = ("ClientRequest", "ClientResponse", "RequestInfo", "Fingerprint")
 
@@ -997,8 +992,6 @@ class ClientResponse(HeadersMixin):
                 raise RuntimeError(
                     "Cannot guess the encoding of " "a not yet read body"
                 )
-            else:
-                encoding = chardet.detect(self._body)["encoding"]
         if not encoding:
             encoding = "utf-8"
 
